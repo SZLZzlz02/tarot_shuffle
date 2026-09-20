@@ -1,0 +1,1641 @@
+// Generated from tarot-rws.zh-CN.json for static browser use. Keep the JSON as the source reference.
+const TAROT_CARDS = [
+  {
+    "id": "major-00-the-fool",
+    "name_en": "The Fool",
+    "name_zh": "愚人",
+    "arcana": "major",
+    "suit": null,
+    "rank": "0",
+    "image": "images/major/00_Fool.jpg",
+    "upright_keywords": [
+      "新起点",
+      "自由精神",
+      "自发行动",
+      "踏入未知"
+    ],
+    "reversed_keywords": [
+      "鲁莽",
+      "疏忽",
+      "准备不足",
+      "漫无目的"
+    ]
+  },
+  {
+    "id": "major-01-the-magician",
+    "name_en": "The Magician",
+    "name_zh": "魔术师",
+    "arcana": "major",
+    "suit": null,
+    "rank": "1",
+    "image": "images/major/01_Magician.jpg",
+    "upright_keywords": [
+      "意志力",
+      "技能运用",
+      "主动创造",
+      "显化潜能"
+    ],
+    "reversed_keywords": [
+      "操控误导",
+      "才能未用",
+      "意志分散",
+      "不安失序"
+    ]
+  },
+  {
+    "id": "major-02-the-high-priestess",
+    "name_en": "The High Priestess",
+    "name_zh": "女祭司",
+    "arcana": "major",
+    "suit": null,
+    "rank": "2",
+    "image": "images/major/02_High_Priestess.jpg",
+    "upright_keywords": [
+      "直觉",
+      "秘密",
+      "内在智慧",
+      "静待揭示"
+    ],
+    "reversed_keywords": [
+      "忽视直觉",
+      "表面认知",
+      "情绪压抑",
+      "内在失联"
+    ]
+  },
+  {
+    "id": "major-03-the-empress",
+    "name_en": "The Empress",
+    "name_zh": "皇后",
+    "arcana": "major",
+    "suit": null,
+    "rank": "3",
+    "image": "images/major/03_Empress.jpg",
+    "upright_keywords": [
+      "丰盛",
+      "滋养",
+      "创造力",
+      "成长孕育"
+    ],
+    "reversed_keywords": [
+      "过度依赖",
+      "窒息式照顾",
+      "创造受阻",
+      "忽视自我"
+    ]
+  },
+  {
+    "id": "major-04-the-emperor",
+    "name_en": "The Emperor",
+    "name_zh": "皇帝",
+    "arcana": "major",
+    "suit": null,
+    "rank": "4",
+    "image": "images/major/04_Emperor.jpg",
+    "upright_keywords": [
+      "权威",
+      "结构",
+      "稳定",
+      "保护与掌控"
+    ],
+    "reversed_keywords": [
+      "僵化",
+      "滥用权力",
+      "控制过度",
+      "不成熟"
+    ]
+  },
+  {
+    "id": "major-05-the-hierophant",
+    "name_en": "The Hierophant",
+    "name_zh": "教皇",
+    "arcana": "major",
+    "suit": null,
+    "rank": "5",
+    "image": "images/major/05_Hierophant.jpg",
+    "upright_keywords": [
+      "传统",
+      "教导",
+      "共同信念",
+      "制度与承诺"
+    ],
+    "reversed_keywords": [
+      "反叛传统",
+      "教条束缚",
+      "价值冲突",
+      "另寻路径"
+    ]
+  },
+  {
+    "id": "major-06-the-lovers",
+    "name_en": "The Lovers",
+    "name_zh": "恋人",
+    "arcana": "major",
+    "suit": null,
+    "rank": "6",
+    "image": "images/major/06_Lovers.jpg",
+    "upright_keywords": [
+      "爱与吸引",
+      "结合",
+      "价值一致",
+      "重要选择"
+    ],
+    "reversed_keywords": [
+      "失衡",
+      "关系不和",
+      "价值冲突",
+      "错误选择"
+    ]
+  },
+  {
+    "id": "major-07-the-chariot",
+    "name_en": "The Chariot",
+    "name_zh": "战车",
+    "arcana": "major",
+    "suit": null,
+    "rank": "7",
+    "image": "images/major/07_Chariot.jpg",
+    "upright_keywords": [
+      "意志推进",
+      "掌控方向",
+      "胜利",
+      "克服阻力"
+    ],
+    "reversed_keywords": [
+      "失去方向",
+      "控制失衡",
+      "冲突争执",
+      "受挫失败"
+    ]
+  },
+  {
+    "id": "major-08-strength",
+    "name_en": "Strength",
+    "name_zh": "力量",
+    "arcana": "major",
+    "suit": null,
+    "rank": "8",
+    "image": "images/major/08_Strength.jpg",
+    "upright_keywords": [
+      "内在力量",
+      "勇气",
+      "温柔克制",
+      "坚韧"
+    ],
+    "reversed_keywords": [
+      "自我怀疑",
+      "软弱",
+      "失控",
+      "滥用力量"
+    ]
+  },
+  {
+    "id": "major-09-the-hermit",
+    "name_en": "The Hermit",
+    "name_zh": "隐者",
+    "arcana": "major",
+    "suit": null,
+    "rank": "9",
+    "image": "images/major/09_Hermit.jpg",
+    "upright_keywords": [
+      "独处反思",
+      "审慎",
+      "寻求真理",
+      "内在指引"
+    ],
+    "reversed_keywords": [
+      "孤立",
+      "过度退缩",
+      "迷失方向",
+      "因恐惧封闭"
+    ]
+  },
+  {
+    "id": "major-10-wheel-of-fortune",
+    "name_en": "Wheel of Fortune",
+    "name_zh": "命运之轮",
+    "arcana": "major",
+    "suit": null,
+    "rank": "10",
+    "image": "images/major/10_Wheel_of_Fortune.jpg",
+    "upright_keywords": [
+      "命运转折",
+      "周期变化",
+      "好运",
+      "机会来临"
+    ],
+    "reversed_keywords": [
+      "时运受阻",
+      "抗拒变化",
+      "失去掌控",
+      "循环反复"
+    ]
+  },
+  {
+    "id": "major-11-justice",
+    "name_en": "Justice",
+    "name_zh": "正义",
+    "arcana": "major",
+    "suit": null,
+    "rank": "11",
+    "image": "images/major/11_Justice.jpg",
+    "upright_keywords": [
+      "公平",
+      "真相",
+      "因果",
+      "负责决断"
+    ],
+    "reversed_keywords": [
+      "不公",
+      "偏见",
+      "逃避责任",
+      "法律纠葛"
+    ]
+  },
+  {
+    "id": "major-12-the-hanged-man",
+    "name_en": "The Hanged Man",
+    "name_zh": "倒吊人",
+    "arcana": "major",
+    "suit": null,
+    "rank": "12",
+    "image": "images/major/12_Hanged_Man.jpg",
+    "upright_keywords": [
+      "暂停",
+      "牺牲",
+      "换位看待",
+      "顺势放下"
+    ],
+    "reversed_keywords": [
+      "无谓牺牲",
+      "拖延停滞",
+      "抗拒放手",
+      "自我中心"
+    ]
+  },
+  {
+    "id": "major-13-death",
+    "name_en": "Death",
+    "name_zh": "死神",
+    "arcana": "major",
+    "suit": null,
+    "rank": "13",
+    "image": "images/major/13_Death.jpg",
+    "upright_keywords": [
+      "结束",
+      "转化",
+      "告别旧阶段",
+      "重生契机"
+    ],
+    "reversed_keywords": [
+      "抗拒改变",
+      "停滞",
+      "无法放下",
+      "衰败消耗"
+    ]
+  },
+  {
+    "id": "major-14-temperance",
+    "name_en": "Temperance",
+    "name_zh": "节制",
+    "arcana": "major",
+    "suit": null,
+    "rank": "14",
+    "image": "images/major/14_Temperance.jpg",
+    "upright_keywords": [
+      "平衡",
+      "节度",
+      "耐心调和",
+      "整合"
+    ],
+    "reversed_keywords": [
+      "失衡",
+      "过度",
+      "配合不良",
+      "利益冲突"
+    ]
+  },
+  {
+    "id": "major-15-the-devil",
+    "name_en": "The Devil",
+    "name_zh": "恶魔",
+    "arcana": "major",
+    "suit": null,
+    "rank": "15",
+    "image": "images/major/15_Devil.jpg",
+    "upright_keywords": [
+      "束缚",
+      "欲望执着",
+      "物质诱惑",
+      "强迫模式"
+    ],
+    "reversed_keywords": [
+      "挣脱束缚",
+      "重获自主",
+      "看见阴影",
+      "仍有盲点"
+    ]
+  },
+  {
+    "id": "major-16-the-tower",
+    "name_en": "The Tower",
+    "name_zh": "高塔",
+    "arcana": "major",
+    "suit": null,
+    "rank": "16",
+    "image": "images/major/16_Tower.jpg",
+    "upright_keywords": [
+      "突发剧变",
+      "结构崩塌",
+      "真相冲击",
+      "危机揭示"
+    ],
+    "reversed_keywords": [
+      "抗拒崩解",
+      "灾变减弱",
+      "危机延后",
+      "压迫困局"
+    ]
+  },
+  {
+    "id": "major-17-the-star",
+    "name_en": "The Star",
+    "name_zh": "星星",
+    "arcana": "major",
+    "suit": null,
+    "rank": "17",
+    "image": "images/major/17_Star.jpg",
+    "upright_keywords": [
+      "希望",
+      "光明前景",
+      "疗愈更新",
+      "信念"
+    ],
+    "reversed_keywords": [
+      "失去信心",
+      "失望",
+      "傲慢",
+      "力量受阻"
+    ]
+  },
+  {
+    "id": "major-18-the-moon",
+    "name_en": "The Moon",
+    "name_zh": "月亮",
+    "arcana": "major",
+    "suit": null,
+    "rank": "18",
+    "image": "images/major/18_Moon.jpg",
+    "upright_keywords": [
+      "幻象",
+      "潜意识",
+      "直觉",
+      "隐忧与不明"
+    ],
+    "reversed_keywords": [
+      "误解渐散",
+      "情绪混乱",
+      "恐惧",
+      "不稳定"
+    ]
+  },
+  {
+    "id": "major-19-the-sun",
+    "name_en": "The Sun",
+    "name_zh": "太阳",
+    "arcana": "major",
+    "suit": null,
+    "rank": "19",
+    "image": "images/major/19_Sun.jpg",
+    "upright_keywords": [
+      "喜悦",
+      "成功",
+      "活力",
+      "坦率明朗"
+    ],
+    "reversed_keywords": [
+      "快乐受阻",
+      "暂时低落",
+      "过度乐观",
+      "成果打折"
+    ]
+  },
+  {
+    "id": "major-20-judgement",
+    "name_en": "Judgement",
+    "name_zh": "审判",
+    "arcana": "major",
+    "suit": null,
+    "rank": "20",
+    "image": "images/major/20_Judgement.jpg",
+    "upright_keywords": [
+      "觉醒",
+      "复盘审视",
+      "更新",
+      "作出结论"
+    ],
+    "reversed_keywords": [
+      "自我怀疑",
+      "逃避召唤",
+      "判断迟疑",
+      "缺乏觉察"
+    ]
+  },
+  {
+    "id": "major-21-the-world",
+    "name_en": "The World",
+    "name_zh": "世界",
+    "arcana": "major",
+    "suit": null,
+    "rank": "21",
+    "image": "images/major/21_World.jpg",
+    "upright_keywords": [
+      "圆满完成",
+      "成功回报",
+      "整合",
+      "旅程与拓展"
+    ],
+    "reversed_keywords": [
+      "尚未完成",
+      "缺少收尾",
+      "停滞",
+      "局限不前"
+    ]
+  },
+  {
+    "id": "wands-ace",
+    "name_en": "Ace of Wands",
+    "name_zh": "权杖王牌",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "ace",
+    "image": "images/wands/Wands01.jpg",
+    "upright_keywords": [
+      "创意火花",
+      "新行动",
+      "灵感",
+      "开创力量"
+    ],
+    "reversed_keywords": [
+      "能量低落",
+      "延迟启动",
+      "热情受阻",
+      "计划夭折"
+    ]
+  },
+  {
+    "id": "wands-02",
+    "name_en": "Two of Wands",
+    "name_zh": "权杖二",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "2",
+    "image": "images/wands/Wands02.jpg",
+    "upright_keywords": [
+      "规划未来",
+      "衡量选择",
+      "拓展视野",
+      "掌握资源"
+    ],
+    "reversed_keywords": [
+      "害怕改变",
+      "计划不周",
+      "视野受限",
+      "意外扰动"
+    ]
+  },
+  {
+    "id": "wands-03",
+    "name_en": "Three of Wands",
+    "name_zh": "权杖三",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "3",
+    "image": "images/wands/Wands03.jpg",
+    "upright_keywords": [
+      "扩展",
+      "远见",
+      "贸易合作",
+      "等待成果"
+    ],
+    "reversed_keywords": [
+      "阻碍延误",
+      "进展受挫",
+      "合作不足",
+      "期待落空"
+    ]
+  },
+  {
+    "id": "wands-04",
+    "name_en": "Four of Wands",
+    "name_zh": "权杖四",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "4",
+    "image": "images/wands/Wands04.jpg",
+    "upright_keywords": [
+      "庆祝",
+      "安稳归属",
+      "和谐",
+      "阶段完成"
+    ],
+    "reversed_keywords": [
+      "支持不足",
+      "家庭不和",
+      "庆典延期",
+      "根基不稳"
+    ]
+  },
+  {
+    "id": "wands-05",
+    "name_en": "Five of Wands",
+    "name_zh": "权杖五",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "5",
+    "image": "images/wands/Wands05.jpg",
+    "upright_keywords": [
+      "竞争",
+      "观点碰撞",
+      "磨合",
+      "争取机会"
+    ],
+    "reversed_keywords": [
+      "回避冲突",
+      "暗中争执",
+      "无效内耗",
+      "寻求和解"
+    ]
+  },
+  {
+    "id": "wands-06",
+    "name_en": "Six of Wands",
+    "name_zh": "权杖六",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "6",
+    "image": "images/wands/Wands06.jpg",
+    "upright_keywords": [
+      "胜利",
+      "公开认可",
+      "好消息",
+      "信心提升"
+    ],
+    "reversed_keywords": [
+      "认可落空",
+      "自负",
+      "失去信任",
+      "延迟成功"
+    ]
+  },
+  {
+    "id": "wands-07",
+    "name_en": "Seven of Wands",
+    "name_zh": "权杖七",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "7",
+    "image": "images/wands/Wands07.jpg",
+    "upright_keywords": [
+      "坚守立场",
+      "迎战挑战",
+      "竞争优势",
+      "勇气"
+    ],
+    "reversed_keywords": [
+      "不知所措",
+      "信心动摇",
+      "焦虑",
+      "犹豫退让"
+    ]
+  },
+  {
+    "id": "wands-08",
+    "name_en": "Eight of Wands",
+    "name_zh": "权杖八",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "8",
+    "image": "images/wands/Wands08.jpg",
+    "upright_keywords": [
+      "快速推进",
+      "消息到来",
+      "行动加速",
+      "目标将近"
+    ],
+    "reversed_keywords": [
+      "延误",
+      "沟通争执",
+      "节奏混乱",
+      "仓促焦虑"
+    ]
+  },
+  {
+    "id": "wands-09",
+    "name_en": "Nine of Wands",
+    "name_zh": "权杖九",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "9",
+    "image": "images/wands/Wands09.jpg",
+    "upright_keywords": [
+      "韧性",
+      "戒备",
+      "最后坚持",
+      "迎击阻力"
+    ],
+    "reversed_keywords": [
+      "疲惫",
+      "障碍加重",
+      "过度防御",
+      "动力动摇"
+    ]
+  },
+  {
+    "id": "wands-10",
+    "name_en": "Ten of Wands",
+    "name_zh": "权杖十",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "10",
+    "image": "images/wands/Wands10.jpg",
+    "upright_keywords": [
+      "重担",
+      "责任压力",
+      "辛苦成就",
+      "承担过多"
+    ],
+    "reversed_keywords": [
+      "不堪重负",
+      "难以委托",
+      "压力爆表",
+      "复杂阻碍"
+    ]
+  },
+  {
+    "id": "wands-page",
+    "name_en": "Page of Wands",
+    "name_zh": "权杖侍从",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "page",
+    "image": "images/wands/Wands11.jpg",
+    "upright_keywords": [
+      "探索热情",
+      "新消息",
+      "自由尝试",
+      "创意萌芽"
+    ],
+    "reversed_keywords": [
+      "坏消息",
+      "犹豫不定",
+      "方向不明",
+      "拖延生事"
+    ]
+  },
+  {
+    "id": "wands-knight",
+    "name_en": "Knight of Wands",
+    "name_zh": "权杖骑士",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "knight",
+    "image": "images/wands/Wands12.jpg",
+    "upright_keywords": [
+      "冒险行动",
+      "迅速出发",
+      "热烈无畏",
+      "环境变动"
+    ],
+    "reversed_keywords": [
+      "冲动",
+      "中断分离",
+      "急躁",
+      "鲁莽争执"
+    ]
+  },
+  {
+    "id": "wands-queen",
+    "name_en": "Queen of Wands",
+    "name_zh": "权杖王后",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "queen",
+    "image": "images/wands/Wands13.jpg",
+    "upright_keywords": [
+      "自信魅力",
+      "热情友善",
+      "独立果断",
+      "事业活力"
+    ],
+    "reversed_keywords": [
+      "嫉妒",
+      "不安全感",
+      "自我中心",
+      "暗中对立"
+    ]
+  },
+  {
+    "id": "wands-king",
+    "name_en": "King of Wands",
+    "name_zh": "权杖国王",
+    "arcana": "minor",
+    "suit": "wands",
+    "rank": "king",
+    "image": "images/wands/Wands14.jpg",
+    "upright_keywords": [
+      "远见领导",
+      "诚实担当",
+      "热情行动",
+      "驾驭挑战"
+    ],
+    "reversed_keywords": [
+      "专横严厉",
+      "冲动",
+      "要求过高",
+      "缺乏耐心"
+    ]
+  },
+  {
+    "id": "cups-ace",
+    "name_en": "Ace of Cups",
+    "name_zh": "圣杯王牌",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "ace",
+    "image": "images/cups/Cups01.jpg",
+    "upright_keywords": [
+      "情感开启",
+      "喜悦丰盈",
+      "直觉流动",
+      "滋养与爱"
+    ],
+    "reversed_keywords": [
+      "情感不稳",
+      "内心空虚",
+      "爱意受阻",
+      "情绪转折"
+    ]
+  },
+  {
+    "id": "cups-02",
+    "name_en": "Two of Cups",
+    "name_zh": "圣杯二",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "2",
+    "image": "images/cups/Cups02.jpg",
+    "upright_keywords": [
+      "相爱相惜",
+      "伙伴关系",
+      "和谐联结",
+      "彼此回应"
+    ],
+    "reversed_keywords": [
+      "关系失衡",
+      "沟通破裂",
+      "紧张疏离",
+      "激情失控"
+    ]
+  },
+  {
+    "id": "cups-03",
+    "name_en": "Three of Cups",
+    "name_zh": "圣杯三",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "3",
+    "image": "images/cups/Cups03.jpg",
+    "upright_keywords": [
+      "友谊欢聚",
+      "庆祝",
+      "圆满结果",
+      "疗愈支持"
+    ],
+    "reversed_keywords": [
+      "过度享乐",
+      "流言",
+      "孤立",
+      "社交失衡"
+    ]
+  },
+  {
+    "id": "cups-04",
+    "name_en": "Four of Cups",
+    "name_zh": "圣杯四",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "4",
+    "image": "images/cups/Cups04.jpg",
+    "upright_keywords": [
+      "倦怠",
+      "不满足",
+      "沉思",
+      "忽略机会"
+    ],
+    "reversed_keywords": [
+      "重新觉察",
+      "接受新意",
+      "走出冷淡",
+      "预感萌生"
+    ]
+  },
+  {
+    "id": "cups-05",
+    "name_en": "Five of Cups",
+    "name_zh": "圣杯五",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "5",
+    "image": "images/cups/Cups05.jpg",
+    "upright_keywords": [
+      "失落",
+      "悲伤",
+      "期待落空",
+      "仍有余地"
+    ],
+    "reversed_keywords": [
+      "接受失去",
+      "重新联结",
+      "回归",
+      "逐渐和解"
+    ]
+  },
+  {
+    "id": "cups-06",
+    "name_en": "Six of Cups",
+    "name_zh": "圣杯六",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "6",
+    "image": "images/cups/Cups06.jpg",
+    "upright_keywords": [
+      "童年记忆",
+      "怀旧",
+      "熟悉善意",
+      "旧日快乐"
+    ],
+    "reversed_keywords": [
+      "迈向未来",
+      "更新环境",
+      "离开过去",
+      "重获独立"
+    ]
+  },
+  {
+    "id": "cups-07",
+    "name_en": "Seven of Cups",
+    "name_zh": "圣杯七",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "7",
+    "image": "images/cups/Cups07.jpg",
+    "upright_keywords": [
+      "众多选择",
+      "幻想",
+      "愿景",
+      "缺乏实质"
+    ],
+    "reversed_keywords": [
+      "明确意志",
+      "选择聚焦",
+      "摆脱迷惑",
+      "计划落实"
+    ]
+  },
+  {
+    "id": "cups-08",
+    "name_en": "Eight of Cups",
+    "name_zh": "圣杯八",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "8",
+    "image": "images/cups/Cups08.jpg",
+    "upright_keywords": [
+      "转身离开",
+      "价值递减",
+      "寻求更深意义",
+      "告别旧事"
+    ],
+    "reversed_keywords": [
+      "害怕离开",
+      "逃避改变",
+      "迟迟不舍",
+      "短暂欢愉"
+    ]
+  },
+  {
+    "id": "cups-09",
+    "name_en": "Nine of Cups",
+    "name_zh": "圣杯九",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "9",
+    "image": "images/cups/Cups09.jpg",
+    "upright_keywords": [
+      "满足",
+      "愿望实现",
+      "享受成果",
+      "舒适富足"
+    ],
+    "reversed_keywords": [
+      "不够满足",
+      "表面得意",
+      "期待偏差",
+      "内在空缺"
+    ]
+  },
+  {
+    "id": "cups-10",
+    "name_en": "Ten of Cups",
+    "name_zh": "圣杯十",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "10",
+    "image": "images/cups/Cups10.jpg",
+    "upright_keywords": [
+      "情感圆满",
+      "家庭幸福",
+      "深厚友爱",
+      "安心归属"
+    ],
+    "reversed_keywords": [
+      "家庭不和",
+      "理想破裂",
+      "情感失序",
+      "激烈争执"
+    ]
+  },
+  {
+    "id": "cups-page",
+    "name_en": "Page of Cups",
+    "name_zh": "圣杯侍从",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "page",
+    "image": "images/cups/Cups11.jpg",
+    "upright_keywords": [
+      "情感消息",
+      "敏感想象",
+      "温柔惊喜",
+      "静心体会"
+    ],
+    "reversed_keywords": [
+      "情绪幼稚",
+      "诱惑欺瞒",
+      "不安失望",
+      "感情受阻"
+    ]
+  },
+  {
+    "id": "cups-knight",
+    "name_en": "Knight of Cups",
+    "name_zh": "圣杯骑士",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "knight",
+    "image": "images/cups/Cups12.jpg",
+    "upright_keywords": [
+      "浪漫邀约",
+      "追随内心",
+      "理想主义",
+      "消息到来"
+    ],
+    "reversed_keywords": [
+      "花言巧语",
+      "欺骗",
+      "情绪反复",
+      "失望"
+    ]
+  },
+  {
+    "id": "cups-queen",
+    "name_en": "Queen of Cups",
+    "name_zh": "圣杯王后",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "queen",
+    "image": "images/cups/Cups13.jpg",
+    "upright_keywords": [
+      "慈爱同理",
+      "直觉洞察",
+      "温柔支持",
+      "情感智慧"
+    ],
+    "reversed_keywords": [
+      "情感依赖",
+      "边界模糊",
+      "不可信赖",
+      "自我牺牲"
+    ]
+  },
+  {
+    "id": "cups-king",
+    "name_en": "King of Cups",
+    "name_zh": "圣杯国王",
+    "arcana": "minor",
+    "suit": "cups",
+    "rank": "king",
+    "image": "images/cups/Cups14.jpg",
+    "upright_keywords": [
+      "情绪成熟",
+      "公正体谅",
+      "创造智慧",
+      "稳定支持"
+    ],
+    "reversed_keywords": [
+      "情绪操控",
+      "表里不一",
+      "坏建议",
+      "冷漠失衡"
+    ]
+  },
+  {
+    "id": "swords-ace",
+    "name_en": "Ace of Swords",
+    "name_zh": "宝剑王牌",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "ace",
+    "image": "images/swords/Swords01.jpg",
+    "upright_keywords": [
+      "突破",
+      "清晰真相",
+      "智识力量",
+      "果断胜出"
+    ],
+    "reversed_keywords": [
+      "思维混乱",
+      "力量误用",
+      "残酷冲突",
+      "灾难性结果"
+    ]
+  },
+  {
+    "id": "swords-02",
+    "name_en": "Two of Swords",
+    "name_zh": "宝剑二",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "2",
+    "image": "images/swords/Swords02.jpg",
+    "upright_keywords": [
+      "艰难抉择",
+      "暂时平衡",
+      "僵持",
+      "克制冲突"
+    ],
+    "reversed_keywords": [
+      "欺瞒失信",
+      "信息混乱",
+      "两难加剧",
+      "逃避决定"
+    ]
+  },
+  {
+    "id": "swords-03",
+    "name_en": "Three of Swords",
+    "name_zh": "宝剑三",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "3",
+    "image": "images/swords/Swords03.jpg",
+    "upright_keywords": [
+      "心痛",
+      "分离",
+      "悲伤",
+      "关系破裂"
+    ],
+    "reversed_keywords": [
+      "开始疗愈",
+      "释放痛苦",
+      "思绪失序",
+      "旧伤未清"
+    ]
+  },
+  {
+    "id": "swords-04",
+    "name_en": "Four of Swords",
+    "name_zh": "宝剑四",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "4",
+    "image": "images/swords/Swords04.jpg",
+    "upright_keywords": [
+      "休息退隐",
+      "恢复",
+      "独处沉思",
+      "暂停行动"
+    ],
+    "reversed_keywords": [
+      "焦躁不安",
+      "倦怠",
+      "过度警戒",
+      "休息不足"
+    ]
+  },
+  {
+    "id": "swords-05",
+    "name_en": "Five of Swords",
+    "name_zh": "宝剑五",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "5",
+    "image": "images/swords/Swords05.jpg",
+    "upright_keywords": [
+      "不惜代价取胜",
+      "羞辱损失",
+      "敌意",
+      "破坏性冲突"
+    ],
+    "reversed_keywords": [
+      "尝试和解",
+      "怨恨未消",
+      "接受失败",
+      "悲伤余波"
+    ]
+  },
+  {
+    "id": "swords-06",
+    "name_en": "Six of Swords",
+    "name_zh": "宝剑六",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "6",
+    "image": "images/swords/Swords06.jpg",
+    "upright_keywords": [
+      "过渡旅程",
+      "离开困境",
+      "逐步前行",
+      "寻找出路"
+    ],
+    "reversed_keywords": [
+      "抗拒过渡",
+      "旧事未解",
+      "情绪包袱",
+      "被迫公开"
+    ]
+  },
+  {
+    "id": "swords-07",
+    "name_en": "Seven of Swords",
+    "name_zh": "宝剑七",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "7",
+    "image": "images/swords/Swords07.jpg",
+    "upright_keywords": [
+      "策略行动",
+      "隐瞒欺骗",
+      "试探",
+      "计划有风险"
+    ],
+    "reversed_keywords": [
+      "坦白真相",
+      "重新谋划",
+      "听取忠告",
+      "流言暴露"
+    ]
+  },
+  {
+    "id": "swords-08",
+    "name_en": "Eight of Swords",
+    "name_zh": "宝剑八",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "8",
+    "image": "images/swords/Swords08.jpg",
+    "upright_keywords": [
+      "受困",
+      "权力受限",
+      "危机压力",
+      "自我束缚"
+    ],
+    "reversed_keywords": [
+      "看见出口",
+      "摆脱限制",
+      "不安仍存",
+      "意外阻碍"
+    ]
+  },
+  {
+    "id": "swords-09",
+    "name_en": "Nine of Swords",
+    "name_zh": "宝剑九",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "9",
+    "image": "images/swords/Swords09.jpg",
+    "upright_keywords": [
+      "焦虑绝望",
+      "失眠",
+      "恐惧",
+      "失望煎熬"
+    ],
+    "reversed_keywords": [
+      "疑虑加深",
+      "羞愧",
+      "寻求帮助",
+      "逐渐恢复希望"
+    ]
+  },
+  {
+    "id": "swords-10",
+    "name_en": "Ten of Swords",
+    "name_zh": "宝剑十",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "10",
+    "image": "images/swords/Swords10.jpg",
+    "upright_keywords": [
+      "痛苦终局",
+      "崩溃失败",
+      "背叛",
+      "触底结束"
+    ],
+    "reversed_keywords": [
+      "暂时转机",
+      "缓慢复原",
+      "结局难避",
+      "短暂成功"
+    ]
+  },
+  {
+    "id": "swords-page",
+    "name_en": "Page of Swords",
+    "name_zh": "宝剑侍从",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "page",
+    "image": "images/swords/Swords11.jpg",
+    "upright_keywords": [
+      "警觉观察",
+      "好奇求知",
+      "调查消息",
+      "思维活跃"
+    ],
+    "reversed_keywords": [
+      "窥探欺瞒",
+      "准备不足",
+      "只说不做",
+      "意外消息"
+    ]
+  },
+  {
+    "id": "swords-knight",
+    "name_en": "Knight of Swords",
+    "name_zh": "宝剑骑士",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "knight",
+    "image": "images/swords/Swords12.jpg",
+    "upright_keywords": [
+      "迅猛行动",
+      "勇敢辩护",
+      "能力与决断",
+      "直面冲突"
+    ],
+    "reversed_keywords": [
+      "鲁莽",
+      "忽视后果",
+      "失去方向",
+      "能力不足"
+    ]
+  },
+  {
+    "id": "swords-queen",
+    "name_en": "Queen of Swords",
+    "name_zh": "宝剑王后",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "queen",
+    "image": "images/swords/Swords13.jpg",
+    "upright_keywords": [
+      "清醒洞察",
+      "独立判断",
+      "历经悲伤",
+      "坦率界限"
+    ],
+    "reversed_keywords": [
+      "刻薄冷酷",
+      "偏见",
+      "欺骗",
+      "怨恨"
+    ]
+  },
+  {
+    "id": "swords-king",
+    "name_en": "King of Swords",
+    "name_zh": "宝剑国王",
+    "arcana": "minor",
+    "suit": "swords",
+    "rank": "king",
+    "image": "images/swords/Swords14.jpg",
+    "upright_keywords": [
+      "理性权威",
+      "公正判断",
+      "纪律",
+      "法律与真相"
+    ],
+    "reversed_keywords": [
+      "残酷专断",
+      "操控",
+      "恶意",
+      "权力误用"
+    ]
+  },
+  {
+    "id": "pentacles-ace",
+    "name_en": "Ace of Pentacles",
+    "name_zh": "星币王牌",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "ace",
+    "image": "images/pentacles/Pents01.jpg",
+    "upright_keywords": [
+      "物质机遇",
+      "繁荣开端",
+      "现实成果",
+      "安稳富足"
+    ],
+    "reversed_keywords": [
+      "错失机会",
+      "财富负担",
+      "投资不利",
+      "基础不稳"
+    ]
+  },
+  {
+    "id": "pentacles-02",
+    "name_en": "Two of Pentacles",
+    "name_zh": "星币二",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "2",
+    "image": "images/pentacles/Pents02.jpg",
+    "upright_keywords": [
+      "灵活平衡",
+      "多务并行",
+      "适应变化",
+      "消息与周转"
+    ],
+    "reversed_keywords": [
+      "失去平衡",
+      "事务过载",
+      "混乱",
+      "勉强应付"
+    ]
+  },
+  {
+    "id": "pentacles-03",
+    "name_en": "Three of Pentacles",
+    "name_zh": "星币三",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "3",
+    "image": "images/pentacles/Pents03.jpg",
+    "upright_keywords": [
+      "专业技艺",
+      "团队协作",
+      "认真建设",
+      "获得认可"
+    ],
+    "reversed_keywords": [
+      "协作不良",
+      "表现平庸",
+      "组织混乱",
+      "基础薄弱"
+    ]
+  },
+  {
+    "id": "pentacles-04",
+    "name_en": "Four of Pentacles",
+    "name_zh": "星币四",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "4",
+    "image": "images/pentacles/Pents04.jpg",
+    "upright_keywords": [
+      "守住所得",
+      "安全感",
+      "节俭",
+      "占有与控制"
+    ],
+    "reversed_keywords": [
+      "贪吝",
+      "过度占有",
+      "停滞拖延",
+      "放松控制"
+    ]
+  },
+  {
+    "id": "pentacles-05",
+    "name_en": "Five of Pentacles",
+    "name_zh": "星币五",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "5",
+    "image": "images/pentacles/Pents05.jpg",
+    "upright_keywords": [
+      "物质困境",
+      "匮乏",
+      "不安全感",
+      "被排除"
+    ],
+    "reversed_keywords": [
+      "开始改善",
+      "获得援助",
+      "脱离贫困",
+      "混乱尚存"
+    ]
+  },
+  {
+    "id": "pentacles-06",
+    "name_en": "Six of Pentacles",
+    "name_zh": "星币六",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "6",
+    "image": "images/pentacles/Pents06.jpg",
+    "upright_keywords": [
+      "慷慨给予",
+      "礼物援助",
+      "公平分享",
+      "当下富足"
+    ],
+    "reversed_keywords": [
+      "附带条件",
+      "权力不均",
+      "吝啬",
+      "嫉妒贪求"
+    ]
+  },
+  {
+    "id": "pentacles-07",
+    "name_en": "Seven of Pentacles",
+    "name_zh": "星币七",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "7",
+    "image": "images/pentacles/Pents07.jpg",
+    "upright_keywords": [
+      "长期投入",
+      "耐心评估",
+      "等待收获",
+      "经营积累"
+    ],
+    "reversed_keywords": [
+      "回报不足",
+      "急躁焦虑",
+      "努力分散",
+      "投资担忧"
+    ]
+  },
+  {
+    "id": "pentacles-08",
+    "name_en": "Eight of Pentacles",
+    "name_zh": "星币八",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "8",
+    "image": "images/pentacles/Pents08.jpg",
+    "upright_keywords": [
+      "勤学技艺",
+      "专注工作",
+      "精益求精",
+      "学徒成长"
+    ],
+    "reversed_keywords": [
+      "缺乏动力",
+      "虚荣敷衍",
+      "技巧误用",
+      "只顾利益"
+    ]
+  },
+  {
+    "id": "pentacles-09",
+    "name_en": "Nine of Pentacles",
+    "name_zh": "星币九",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "9",
+    "image": "images/pentacles/Pents09.jpg",
+    "upright_keywords": [
+      "独立丰足",
+      "劳动成果",
+      "安稳享受",
+      "审慎自信"
+    ],
+    "reversed_keywords": [
+      "虚假成功",
+      "挥霍",
+      "计划落空",
+      "不诚实"
+    ]
+  },
+  {
+    "id": "pentacles-10",
+    "name_en": "Ten of Pentacles",
+    "name_zh": "星币十",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "10",
+    "image": "images/pentacles/Pents10.jpg",
+    "upright_keywords": [
+      "家业传承",
+      "长期财富",
+      "家庭根基",
+      "积累完成"
+    ],
+    "reversed_keywords": [
+      "家产损失",
+      "根基不稳",
+      "短暂成功",
+      "财务风险"
+    ]
+  },
+  {
+    "id": "pentacles-page",
+    "name_en": "Page of Pentacles",
+    "name_zh": "星币侍从",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "page",
+    "image": "images/pentacles/Pents11.jpg",
+    "upright_keywords": [
+      "学习实践",
+      "务实抱负",
+      "新消息",
+      "专注规划"
+    ],
+    "reversed_keywords": [
+      "懒散失焦",
+      "承诺不足",
+      "浪费",
+      "不利消息"
+    ]
+  },
+  {
+    "id": "pentacles-knight",
+    "name_en": "Knight of Pentacles",
+    "name_zh": "星币骑士",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "knight",
+    "image": "images/pentacles/Pents12.jpg",
+    "upright_keywords": [
+      "可靠负责",
+      "踏实工作",
+      "效率",
+      "稳步推进"
+    ],
+    "reversed_keywords": [
+      "停滞懒散",
+      "粗心",
+      "执着工作",
+      "付出无回报"
+    ]
+  },
+  {
+    "id": "pentacles-queen",
+    "name_en": "Queen of Pentacles",
+    "name_zh": "星币王后",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "queen",
+    "image": "images/pentacles/Pents13.jpg",
+    "upright_keywords": [
+      "务实照料",
+      "慷慨富足",
+      "安全稳定",
+      "生活智慧"
+    ],
+    "reversed_keywords": [
+      "猜疑不安",
+      "过度包办",
+      "嫉妒",
+      "只顾自己"
+    ]
+  },
+  {
+    "id": "pentacles-king",
+    "name_en": "King of Pentacles",
+    "name_zh": "星币国王",
+    "arcana": "minor",
+    "suit": "pentacles",
+    "rank": "king",
+    "image": "images/pentacles/Pents14.jpg",
+    "upright_keywords": [
+      "事业成功",
+      "可靠经营",
+      "物质安全",
+      "务实领导"
+    ],
+    "reversed_keywords": [
+      "贪婪腐化",
+      "纵欲",
+      "顽固",
+      "利益至上"
+    ]
+  }
+];

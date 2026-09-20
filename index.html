@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A lightweight browser-based tarot drawing and study tool.">
+    <meta name="application-name" content="Tarot Study">
+    <title>Tarot Study</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2310162d'/%3E%3Cpath d='M41 12a22 22 0 1 0 11 38A24 24 0 1 1 41 12Z' fill='%23d9bb78'/%3E%3Ccircle cx='47' cy='22' r='3' fill='%23f4e7bd'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-lockup">
+          <span class="brand-mark" aria-hidden="true">☾</span>
+          <div>
+            <p class="eyebrow">RIDER–WAITE–SMITH</p>
+            <h1>Tarot Study</h1>
+          </div>
+        </div>
+
+        <div class="round-actions">
+          <div class="round-pill" id="roundPill" aria-live="polite">
+            <span class="round-dot" aria-hidden="true"></span>
+            <span id="roundStatus">尚未开始回合</span>
+          </div>
+          <button class="button button-quiet" id="endRoundButton" type="button" hidden>结束回合</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="workspace" aria-labelledby="setupHeading">
+          <div class="workspace-copy">
+            <p class="section-kicker">ROUND SETUP</p>
+            <h2 id="setupHeading">先定义牌阵，也可以直接抽牌</h2>
+            <p>每个新回合只洗牌一次。你输入的数字会在本回合内固定对应同一张牌与同一方向。</p>
+          </div>
+
+          <div class="setup-grid">
+            <label class="field">
+              <span>牌阵名称 <em>可选</em></span>
+              <input id="spreadName" type="text" maxlength="80" placeholder="例如：Three-card spread" autocomplete="off">
+            </label>
+
+            <label class="field field-wide">
+              <span>牌位名称 <em>可选，每行一个</em></span>
+              <textarea id="spreadPositions" rows="4" placeholder="Past&#10;Present&#10;Future"></textarea>
+              <small>牌位会按照输入的抽牌数字顺序逐一对应。</small>
+            </label>
+          </div>
+
+          <div class="setup-footer">
+            <button class="button button-primary" id="startRoundButton" type="button">开始新回合</button>
+            <p class="data-note" id="dataNote">正在检查 78 张牌的数据…</p>
+          </div>
+        </section>
+
+        <section class="draw-panel" id="drawPanel" aria-labelledby="drawHeading" hidden>
+          <div class="panel-heading">
+            <div>
+              <p class="section-kicker">MAIN DRAW</p>
+              <h2 id="drawHeading">输入本回合的抽牌数字</h2>
+            </div>
+            <span class="round-reference" id="mainRoundReference"></span>
+          </div>
+
+          <div class="draw-row">
+            <label class="field draw-input">
+              <span>数字 1–78</span>
+              <input id="mainNumbers" type="text" inputmode="numeric" placeholder="43, 57, 66, 42" autocomplete="off">
+            </label>
+            <button class="button button-primary" id="drawButton" type="button">Draw · 翻牌</button>
+          </div>
+          <p class="field-hint">请自行选择数字；可用逗号、空格或换行分隔。</p>
+          <div class="message" id="mainMessage" role="alert" aria-live="assertive" hidden></div>
+        </section>
+
+        <section class="reading" id="mainReading" aria-labelledby="mainReadingHeading" hidden>
+          <div class="reading-heading">
+            <div>
+              <p class="section-kicker">SPREAD</p>
+              <h2 id="mainReadingHeading">本次牌阵</h2>
+            </div>
+            <span class="round-reference" id="readingRoundReference"></span>
+          </div>
+          <div class="card-grid" id="mainCardGrid"></div>
+        </section>
+
+        <section class="clarification" id="clarificationSection" aria-labelledby="clarificationHeading" hidden>
+          <div class="clarification-form">
+            <div class="panel-heading compact-heading">
+              <div>
+                <p class="section-kicker">SAME DECK · SAME ROUND</p>
+                <h2 id="clarificationHeading">Clarification Draw · 补充抽牌</h2>
+              </div>
+              <span class="round-reference" id="clarificationRoundReference"></span>
+            </div>
+
+            <div class="clarification-grid">
+              <label class="field">
+                <span>补充问题标签 <em>可选</em></span>
+                <input id="clarificationLabel" type="text" maxlength="100" placeholder="例如：还需要注意什么？" autocomplete="off">
+              </label>
+              <label class="field">
+                <span>其他数字 1–78</span>
+                <input id="clarificationNumbers" type="text" inputmode="numeric" placeholder="8, 24" autocomplete="off">
+              </label>
+              <button class="button button-secondary" id="clarificationButton" type="button">补充翻牌</button>
+            </div>
+            <div class="message" id="clarificationMessage" role="alert" aria-live="assertive" hidden></div>
+            <div class="drawn-history" id="drawnHistory" aria-live="polite"></div>
+          </div>
+
+          <div id="clarificationResults"></div>
+        </section>
+
+        <section class="developer-error" id="developerError" role="alert" hidden>
+          <p class="section-kicker">DATA ERROR</p>
+          <h2>牌组数据无法使用</h2>
+          <p id="developerErrorText"></p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Tarot Study · 牌义请结合问题、牌位与相邻牌综合理解</p>
+      </footer>
+    </div>
+
+    <script src="data/tarot-data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
